@@ -1,0 +1,10 @@
+#!/usr/bin/env python
+import Harvest
+import json
+
+config = json.load(open("config", "r"))
+
+h = Harvest.Harvest(**config)
+time_entries = h.time_entries()
+print(json.dumps(time_entries, sort_keys = True, indent=4))
+

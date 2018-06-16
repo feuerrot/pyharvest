@@ -1,0 +1,4 @@
+{
+	"account_id": "<numeric ID>",
+	"access_token": "<account ID + stuff WITHOUT BEARER>"
+}
